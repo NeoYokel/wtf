@@ -1,17 +1,19 @@
+# Readme
+
 === What The Fuck ===
 Contributors: David Blue
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Theme for David Blue dot What The Fuck - forked and adapted from WordPress' What The Fuck theme.
+Theme for David Blue dot What The Fuck - adapted from [WordPress' Twenty Twenty theme](https://github.com/wordpress/twentytwenty).
 
 == Description ==
 
-Theme for David Blue dot What The Fuck - forked and adapted from WordPress' What The Fuck theme.
+Theme for [David Blue dot What The Fuck](https://davidblue.wtf) - forked and adapted from WordPress' What The Fuck theme.
 
 == Changelog ==
 
-= 1.5 =
+= 1.0 =
 
 * Released: September 12, 2020.
 

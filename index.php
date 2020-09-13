@@ -3,9 +3,7 @@
  *
  * @link https://davidblue.wtf/meta
  *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @package What The Fuck
  */
 
 get_header();

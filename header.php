@@ -1,12 +1,9 @@
 <?php
 /**
- * Header file for the Twenty Twenty WordPress default theme.
+ * @link https://github.com/NeoYokel/wtf
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @package What The Fuck
+ * @subpackage What_The_Fuck
  */
 
 ?><!DOCTYPE html>

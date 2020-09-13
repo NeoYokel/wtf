@@ -123,15 +123,17 @@ body {
 	background: #f5efe0;
 	box-sizing: border-box;
 	color: #000;
-	font-size: 1.8rem;
-	letter-spacing: -0.015em;
+	font-size: 21px;
+	font-weight: 400
+	line-height: 1.5em;
+	/* letter-spacing: -0.015em; */
 	text-align: left;
 }
 
 @supports ( font-variation-settings: normal ) {
 
 	body {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: adobe-caslon-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -220,7 +222,7 @@ path {
 	left: 6px;
 	top: 7px;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 700;
 	text-decoration: none;
 	line-height: normal;
 	padding: 15px 23px 14px;
@@ -252,7 +254,7 @@ Inter variable font. Usage:
 ---------------------------------------------- */
 
 @font-face {
-	font-family: "Inter var";
+	font-family: adobe-caslon-pro;
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: normal;
 	font-display: swap;
@@ -260,7 +262,7 @@ Inter variable font. Usage:
 }
 
 @font-face {
-	font-family: "Inter var";
+	font-family: adobe-caslon-pro;
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: italic;
 	font-display: swap;
@@ -305,13 +307,20 @@ h6,
 
 h1,
 .heading-size-1 {
-	font-size: 3.6rem;
-	font-weight: 800;
+	font-family: aktiv-grotesk-condensed, sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
 	line-height: 1.138888889;
+	letter-spacing: -5px;
+	color: #F2441D;
 }
 
 h2,
 .heading-size-2 {
+	font-family: aktiv-grotesk, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #00006b;
 	font-size: 3.2rem;
 }
 
@@ -338,6 +347,7 @@ h6,
 }
 
 p {
+	font-family: adobe-caslon-pro, serif;
 	line-height: 1.5;
 	margin: 0 0 1em 0;
 }
@@ -490,7 +500,8 @@ ol ol ol {
 }
 
 li {
-	line-height: 1.5;
+	font-family: adobe-caslon-pro, serif;
+	line-height: 1.4;
 	margin: 0.5rem 0 0 2rem;
 }
 
@@ -548,7 +559,7 @@ cite {
 	color: #6d6d6d;
 	font-size: 1.4rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.25;
 }
 
@@ -739,7 +750,7 @@ button,
 	.faux-button.more-link,
 	.wp-block-button__link,
 	.wp-block-file__button {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: adobe-caslon-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -835,7 +846,7 @@ input[type="submit"] {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.0333em;
 	line-height: 1.25;
 	margin: 0;
@@ -921,7 +932,7 @@ td {
 
 caption {
 	background: #dcd7ca;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 0.5em;
 	text-align: center;
 }
@@ -1343,7 +1354,8 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #fff;
+	background-color: #04BFAD;
+	padding: 0;
 	position: relative;
 }
 
@@ -1367,6 +1379,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 	justify-content: flex-start;
 	padding-left: 0;
 	text-align: left;
+	color: #F5D7E3;
 }
 
 .site-title,
@@ -1377,7 +1390,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 
 .site-title {
 	font-size: 2.1rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1;
 }
 
@@ -1501,7 +1514,7 @@ body:not(.enable-search-modal) .site-logo img {
 .toggle-inner .toggle-text {
 	color: #6d6d6d;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	position: absolute;
 	top: calc(100% + 0.5rem);
 	width: auto;
@@ -1542,6 +1555,7 @@ body:not(.enable-search-modal) .site-logo img {
 	right: 0;
 	top: 0;
 	width: 6.6rem;
+	color: #F5D7E3;
 }
 
 .nav-toggle .toggle-icon,
@@ -1552,6 +1566,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .nav-toggle .toggle-inner {
 	padding-top: 0.8rem;
+	color: #F5D7E3;
 }
 
 /* Primary Menu ---------------------------- */
@@ -1562,9 +1577,10 @@ body:not(.enable-search-modal) .site-logo img {
 
 ul.primary-menu {
 	display: flex;
+	font-family: aktiv-grotesk, sans-serif;
 	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: -0.0277em;
+	font-weight: 700;
+	letter-spacing: -1.3px;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin: -0.8rem 0 0 -1.6rem;
@@ -1783,7 +1799,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 
 
 .menu-modal {
-	background: #fff;
+	background: #00006b;
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
@@ -2389,7 +2405,7 @@ body:not(.singular) main > article:first-of-type {
 
 .singular .entry-header {
 	background-color: #fff;
-	padding: 4rem 0;
+	padding: 1.4rem 0;
 }
 
 .entry-categories {
@@ -2595,7 +2611,7 @@ h2.entry-title {
 	border-radius: 0.4rem;
 	display: flex;
 	font-size: 0.9em;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1;
 	margin: 3em auto 0 auto;
 	padding: 0;
@@ -2660,7 +2676,7 @@ h2.entry-title {
 .author-bio .author-link {
 	display: block;
 	font-size: 1.6rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin-top: 1em;
 	text-decoration: none;
 }
@@ -2694,7 +2710,7 @@ h2.entry-title {
 .pagination-single a {
 	align-items: baseline;
 	display: flex;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: -0.0275em;
 	text-decoration: none;
 	flex: 1;
@@ -2794,7 +2810,7 @@ h2.entry-title {
 	color: #cd2653;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 5.1em;
-	font-weight: 800;
+	font-weight: 700;
 	margin: 0.05em 0.1em 0 0;
 }
 
@@ -2832,7 +2848,7 @@ h2.entry-title {
 	.entry-content .wp-block-latest-comments,
 	.entry-content .wp-block-cover-image p,
 	.entry-content .wp-block-pullquote {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: adobe-caslon-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -2981,7 +2997,7 @@ h2.entry-title {
 .wp-block-latest-posts__post-date {
 	color: #6d6d6d;
 	font-size: 0.7em;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: normal;
 	margin-top: 0.15em;
 }
@@ -3557,7 +3573,7 @@ figure.wp-block-table.is-style-stripes {
 	.entry-content address,
 	.entry-content .wp-caption-text,
 	.entry-content .wp-block-file {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: adobe-caslon-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -3807,7 +3823,7 @@ div.comment:first-of-type {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 1.2rem;
-	font-weight: 600;
+	font-weight: 700;
 	justify-content: flex-start;
 	letter-spacing: 0.030833333em;
 	line-height: 1;
@@ -3980,7 +3996,7 @@ div.comment:first-of-type {
 .comment-reply-title small {
 	display: block;
 	font-size: 1.6rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: -0.0277em;
 	margin: 0.5rem 0 0 0;
 	white-space: nowrap;
@@ -4007,7 +4023,7 @@ div.comment:first-of-type {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin: -1.5rem 0 0 -2.5rem;
 	width: calc(100% + 2.5rem);
 }
@@ -4146,7 +4162,7 @@ div.comment:first-of-type {
 	.widget-content cite,
 	.widget-content figcaption,
 	.widget-content .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: adobe-caslon-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -4490,7 +4506,7 @@ a.to-the-top > * {
 }
 
 .footer-copyright {
-	font-weight: 600;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -4624,7 +4640,7 @@ a.to-the-top > * {
 	}
 }
 
-@media ( min-width: 600px ) {
+@media ( min-width: 700px ) {
 
 	/* Blocks -------------------------------- */
 
@@ -5685,6 +5701,7 @@ a.to-the-top > * {
 	.header-titles .site-logo,
 	.header-titles .site-description {
 		margin: 1rem 0 0 2.4rem;
+		color: #F5D7E3;
 	}
 
 	.wp-custom-logo .header-titles {
